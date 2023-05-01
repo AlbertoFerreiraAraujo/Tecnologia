@@ -50,7 +50,7 @@ background-size: 100%;
 
 #btnDireito{
     width: 200px;
-    background-color: rgb(12, 146, 255);
+    background-color: rgb(13, 142, 248);
     
     color: #FFF;
     text-align: center;
@@ -63,11 +63,18 @@ background-size: 100%;
             
 }
 
+#contato{
+    position: absolute; 
+    right: 5%;
+    
+    
+
+}
 
 #rodape{
     width: 400;
     position: absolute; 
-    left: 1%;
+    left: 40%;
     bottom: 1%; 
     
 
@@ -106,8 +113,8 @@ background-size: 100%;
         escrevendo o corpo do texto
     
     </div>
-    <a href="https://albertof-portfolio.netlify.app/"><div id="btnEsquerdo"> VOLTAR </div></a>
-    <a href=""><div id="btnDireito"> CONTATO </div></a>
+    <a href="https://albertof-portfolio.netlify.app/"><div id="btnEsquerdo" onmouseout="voltaE()" onmouseover="mudaE()"> VOLTAR </div></a>
+    <a href=""><div id="btnDireito" onmouseout="voltaD()" onmouseover="mudaD()"> CONTATO </div></a>
     </div>
 
 <div id="rodape">Direitos reservados - Alberto F. 2022</div>
@@ -117,9 +124,54 @@ background-size: 100%;
 
 
 
+<div id="contato">
+<form action="https://formsubmit.co/albertof.araujofilho@gmail.com" method="POST">
+    
+    <input type=text name="nome" size="20" placeholder="nome, email, ou telefone" required><br><br>
+    <textarea name="texto" rows="10" cols="50" placeholder="insira sua menssagem" style="resize: none" required></textarea><br>
+    <input type=submit value="enviar">
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
 </table>
+
+
+
+<script>
+
+function voltaE(){
+    let muda = document.getElementById("btnEsquerdo");
+    muda.style.backgroundColor="rgb(255, 255, 255)";
+    };
+
+function mudaE(){
+    let muda = document.getElementById("btnEsquerdo");
+    muda.style.backgroundColor="rgb(255, 174, 0)";
+    };
+
+
+function voltaD(){
+    let outro = document.getElementById("btnDireito");
+    outro.style.backgroundColor=" rgb(13, 142, 248)";
+};
+function mudaD(){
+    let outro = document.getElementById("btnDireito");
+    outro.style.backgroundColor=" 35d0ff ";
+};
+
+</script>
 </body>
 </html>
