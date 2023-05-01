@@ -65,11 +65,18 @@ background-size: 100%;
 
 #contato{
     position: absolute; 
+    top: 5%;
     right: 5%;
-    
+
+    background-color: #000000cb;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
     
 
 }
+
+
 
 #rodape{
     width: 400;
@@ -98,7 +105,12 @@ background-size: 100%;
     
 
 <tr>
-<tr><td background=hi-tech.svg>
+<tr>
+<td>
+<picture>
+	<source media="(max-width: 1080px)" srcset="hi-tech-portrait.svg">
+	<img src="hi-tech.svg" width="100%" > 
+</picture>
 
     <div id="texto">
         <h1>ESCREVENDO O TITULO</h1>
@@ -127,8 +139,10 @@ background-size: 100%;
 <div id="contato">
 <form action="https://formsubmit.co/albertof.araujofilho@gmail.com" method="POST">
     
-    <input type=text name="name" size="20" placeholder="nome, email, ou telefone" required><br><br>
-    <textarea name="message" rows="10" cols="50" placeholder="insira sua mensagem" style="resize: none" required></textarea><br>
+    <input type=text name="name" size="20" placeholder="nome, email, ou telefone" required>
+    <br><br>
+    <textarea name="message" rows="5" cols="60" placeholder="insira sua mensagem" style="resize: none" required></textarea>
+    <br><br>
     <input type=submit value="enviar">
 
 </form>
